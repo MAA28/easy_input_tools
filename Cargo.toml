@@ -10,4 +10,3 @@ colored = "2.1.0"
 crossterm = "0.27.0"
 k_board = { version = "1.2.4", features = ["full"] }
 term = "0.7.0"
-termion = "4.0.1"
