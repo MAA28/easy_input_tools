@@ -42,7 +42,7 @@ pub fn options(
     stdout.execute(cursor::MoveToColumn(0))?;
     stdout.execute(terminal::Clear(terminal::ClearType::FromCursorDown))?;
     output = render(options, selected, &format_option, true);
-    stdout.write(output.as_bytes())?;
+    stdout.write(format!("{}\n", output).as_bytes())?;
     stdout.execute(cursor::Show)?;
     Ok(selected)
 }
